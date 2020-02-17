@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navigation1 style */
+.navCon{
+    background-color: #DDDDDD !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap;
+}
+.collapse{
+    flex-grow: 1;
+}
+.navItem{
+
+}
+.navAnchor, .activeAnchor, .navAnchor2{
+    text-shadow: none;
+    color: #666666;
+    font-size: .7em;
+    padding: 5px 30px !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navAnchor:hover{
+    color: #DC2128 !important;
+    background-color: #fff !important;
+}
+.navAnchor2:hover{
+    color: #666666;
+    background-color: #fff !important;
+}
+.activeAnchor{
+    background-color: #fff;
+}
+.activeAnchor:hover{
+    color: #666666;
+}
+/* end of navigation1 style */
+
+
+/* Social media Anchor */
+.landingSocial{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.landingSocialIcon{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    padding: 5px;
+}
+.landingSocialIcon:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #55595c;
+}
+.landingChat1, .landingChat2{
+    position: fixed;
+    bottom: 2vh;
+    text-decoration: none;
+    font-size: 2em;
+    z-index: 1;
+    border-radius: 50%;
+}
+.landingChat1:hover{
+    text-decoration: none;
+}
+.landingChat2:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(139, 0, 0, 0.5);
+    transition: .7s;
+}
+.landingChat1{
+    left: 2vw;
+}
+.landingChat2{
+    right: 2vw;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: darkred;
+}
+/* Social media Anchor */
+

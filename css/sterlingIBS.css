@@ -1,0 +1,53 @@
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    min-height: fit-content;
+    background-image: url(../images/sterlingIBS/bg.jpg);
+    background-position: top;
+    background-size: cover, 100%;
+    position: relative;
+    overflow-y: auto;
+}
+
+/* style for oldCoperateIB page */
+.wrapper1{
+    width: 100vw;
+    height: 100vh;
+    min-height: fit-content;
+    background-image: url(../images/oldCoperateIB/bg.jpg);
+    background-position: top;
+    background-size: cover, 100%;
+    position: relative;
+    overflow-y: auto;
+}
+/* end of style for oldCoperateIB page */
+
+.login{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 30%;
+    min-width: 250px;
+    max-width: 350px;
+    border-radius: 5px 30px 5px 30px;
+    background-color:#fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+input[type="text"], input[type="password"], input[type="date"]{
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    border: 1px solid rgb(221, 221, 221);
+}
+input[type="submit"]{
+    display: block;
+    padding: 0 30px;
+    height: 35px;
+    background-color: #AD1620;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
