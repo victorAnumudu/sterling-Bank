@@ -15,7 +15,8 @@
     z-index: 1;
     background-color: rgb(238, 238, 238);
     border-radius: 5px;
-    height: 550px;
+    width: 50%;
+    height: auto
 }
 .closePopUp{
     color: #AD161F;
@@ -29,7 +30,8 @@
 .imagePopUp{
     clear: both;
     display: block;
-    height: 90%;
+    width: 100%;
+    height: auto;
 }
 /* END OF POP UP DISPLAY */
 
