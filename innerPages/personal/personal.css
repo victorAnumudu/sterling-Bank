@@ -284,7 +284,7 @@
 /* section4 Div */
 .section4{
     clear: both;
-    padding: 50px;
+    padding: 50px 70px;
     background-color: #fff;
 }
 .section4Con{
@@ -375,6 +375,9 @@
         max-width: 100% !important;
         margin: 10px 0;
     }
+    .section4Anchor, .section4Anchor:hover{
+        padding: 5% 0 5% 0%;
+    }
     .section4Link{
         width: 100%;
     }
@@ -397,4 +400,174 @@
 
 
 /* style for section5 Div */
+.section5{
+    padding: 50px;
+    background-color: #fff;
+}
+.section5Background{
+    background-image: url(../personal/images/section5/kiki-banner.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    padding: 0 5%;
+}
+.section5Cover{
+    background-color: rgba(0, 0, 0, 0.12);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.section5Grid{
+    padding: 10% 0;
+    width: 100%;
+}
+.section5Header{
+    color: #E17AA8;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.section5HeaderBlack{
+    color: #000;
+    display: block;
+}
+.section5Para2{
+    font-size: .8em;
+    padding-left: 10px;
+    color: rgb(68, 68, 68);
+    border-left: 2px solid rgb(68, 68, 68);
+}
+.section5Link, .section5Link:hover{
+    text-decoration: none;
+    padding: 10px 0;
+    display: inline-block;
+}
+.section5LinkItem{
+    width: 120px;
+    height: auto;
+}
+@media only screen and (max-width:500px){
+    .section5{
+        padding: 0;
+    }
+    .section5Background{
+        width: 100%;
+        min-width: 300px;
+    }
+}
+@media only screen and (max-width:700px){
+    .section5Background{
+        background-size: cover;
+        background-position: center;
+    }
+}
 /* end of section5 Div */
+
+
+/* section6 Three Flex Display Images */
+.section6{
+    padding: 0 50px;
+    justify-content: space-between;
+}
+.section6Item{
+    border: 1px solid rgb(246, 246, 246);
+    max-width: 32% !important;
+}
+.section6Anchor, .section6Anchor:hover{
+    text-decoration: none;
+    width: 100%;
+}
+.section6Img{
+    width: 100%;
+}
+@media only screen and (max-width:767px){
+    .section6Item{
+        max-width: 100% !important;
+        margin-bottom: 20px;
+    }
+}
+/* end of section6 Three Flex Display Images */
+
+
+/* section6 Latest News Update */
+.section7{
+    background-color: #fff;
+    padding: 50px 50px 0 50px;
+}
+.section7Head, .section7Para{
+    text-align: center;
+}
+.section7Para{
+    padding-bottom: 20px;
+}
+.section7FlexCon{
+    justify-content: space-between;
+}
+.section7Item{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    max-width: 32% !important;
+}
+.section7Item:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.section7Anchor, .section7Anchor:hover{
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    width: 100%;
+}
+.section7Img{
+    width: 100%;
+    height: 40vh;
+    background-color: #000;
+    background-size: 100% 100%;
+}
+.section7Img1{
+    background-image: url(../personal/images/section7/1.jpg);
+}
+.section7Img2{
+    background-image: url(../personal/images/section7/2.jpg);
+}
+.section7Img3{
+    background-image: url(../personal/images/section7/3.jpg);
+}
+.section7Description{
+    padding: 20px 10px;
+    width: 100%;
+}
+.section7ImgHeader{
+ font-size: 1.5em;
+ word-wrap: break-word;
+}
+.section7ImgPara{
+    padding-top: 20px;
+    font-size: .8em;
+}
+.section7ReadMore{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #B21B21;
+}
+.section7ReadMore:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #55595c;
+}
+@media only screen and (max-width:1024px){
+    .section7Item{
+        max-width: 48% !important;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width:767px){
+    .section7Item{
+        max-width: 100% !important;
+        margin-bottom: 20px;
+    }
+}
+/* end of section7 Latest News Update */
