@@ -571,3 +571,99 @@
     }
 }
 /* end of section7 Latest News Update */
+
+/* section8 Footer Div */
+.section8{
+    
+}
+.section8LinkCon{
+    justify-content: space-between;
+    background-color: #666666;
+    padding: 20px 50px;
+}
+.section8List{
+    list-style-type: none;
+}
+
+/* style for footer link show/hide */
+#section8List1, #section8List2, #section8List3, #section8List4, #section8List5{
+    list-style-type: none;
+}
+#listShow1, #listHide1, #listShow2, #listHide2, #listShow3, #listHide3, #listShow4, #listHide4, #listShow5, #listHide5{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: inherit;
+    background-color: red;
+}
+#listShow1, #listShow2, #listShow3, #listShow4, #listShow5{
+    z-index: 2;
+}
+#listHide1, #listHide2, #listHide3, #listHide4, #listHide5{
+    z-index: 1;
+}
+@media only screen and (max-width:1024px){
+    .section8LinkCon{
+        /* display: flex !important; */
+        /* justify-content: space-between !important; */
+        /* flex-wrap: wrap !important; */
+    }
+    .section8List{
+        list-style-type: none;
+        /* display: inline-flex; */
+        /* width: 250px !important; */
+    }
+    .section8ListItemHeader{
+        padding: 10px 0;
+    }
+    #listShow1, #listHide1, #listShow2, #listHide2, #listShow3, #listHide3, #listShow4, #listHide4, #listShow5, #listHide5{
+        display: inline-block;
+    }
+    #section8List1, #section8List2, #section8List3, #section8List4, #section8List5{
+        display: none;
+    }
+}
+/* End of style for footer link show/hide */
+.section8ListItemHeader{
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+}
+.section8Anchor{
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+    font-size: .8em;
+    display: block;
+    padding: 5px 0;
+}
+.section8Anchor:hover{
+    text-decoration: none;
+    color:#fff;
+}
+.section8Icon{
+    color: #fff;
+    transform: rotate(-40deg);
+}
+.section8CopyRight{
+    justify-content: space-between;
+    background-color: #4A4A4A;
+    padding: 10px 50px;
+}
+.section8CopyRightItem1, .section8CopyRightItem2{
+    color: rgb(158, 158, 158);
+    font-size: 0.7em;
+    font-weight: 700;
+
+}
+.section8CopyRightItem2{
+    text-align: right;
+}
+
+@media only screen and (max-width:767px){
+    .section8CopyRightItem1, .section8CopyRightItem2{
+        text-align: center;
+    }
+}
+/* end of section8 Footer Div */
