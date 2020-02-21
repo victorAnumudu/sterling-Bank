@@ -591,38 +591,54 @@
 }
 #listShow1, #listHide1, #listShow2, #listHide2, #listShow3, #listHide3, #listShow4, #listHide4, #listShow5, #listHide5{
     display: none;
-    cursor: pointer;
     position: absolute;
-    top: 0;
-    right: 0;
-    width: inherit;
-    background-color: red;
+    top: 0%;
+    bottom: 0;
+    width: 100%;
+    border: none;
+    text-align: end;
+    background-color: transparent;
+}
+span{
+    background-color: #fff;
+    color: #000;
+    font-size: 700;
 }
 #listShow1, #listShow2, #listShow3, #listShow4, #listShow5{
     z-index: 2;
+    color: #fff;
 }
 #listHide1, #listHide2, #listHide3, #listHide4, #listHide5{
     z-index: 1;
+    color: #000;
 }
-@media only screen and (max-width:1024px){
+@media only screen and (max-width:992px){
     .section8LinkCon{
-        /* display: flex !important; */
-        /* justify-content: space-between !important; */
-        /* flex-wrap: wrap !important; */
+        display: flex !important;
+        justify-content: space-between !important;
+        flex-wrap: wrap !important;
+        padding: 20px 40px;
     }
     .section8List{
         list-style-type: none;
-        /* display: inline-flex; */
-        /* width: 250px !important; */
+        max-width: 19% !important;
     }
     .section8ListItemHeader{
-        padding: 10px 0;
+        padding: 0;
     }
     #listShow1, #listHide1, #listShow2, #listHide2, #listShow3, #listHide3, #listShow4, #listHide4, #listShow5, #listHide5{
-        display: inline-block;
+        display: block;
     }
     #section8List1, #section8List2, #section8List3, #section8List4, #section8List5{
         display: none;
+    }
+}
+@media only screen and (max-width:767px){
+    .section8List{
+        max-width: 100% !important;
+    }
+    .section8ListItemHeader{
+        padding: 10px 0;
     }
 }
 /* End of style for footer link show/hide */
