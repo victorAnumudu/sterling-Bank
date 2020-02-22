@@ -215,7 +215,7 @@
     animation-duration: 7s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    height: 420px;
+    height: inherit;
 }
 @keyframes Imgslide{
     0%{background-image: url(../personal/images/section3MainSlide/website-sliders8.jpg);}
@@ -239,11 +239,11 @@
     padding: 7% 0;
 }
 .section3AnchorLinkHeader{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
 }
 .section3AnchorLinkPara{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     padding: 10px 0;
 }
@@ -263,7 +263,10 @@
     margin: auto;
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:576px){
+    .section3Description{
+        padding: 50px 20px;
+    }
     .section3AnchorLinkHeader{
         font-size: 30px;
         font-weight: 500;
@@ -284,7 +287,7 @@
 /* section4 Div */
 .section4{
     clear: both;
-    padding: 50px 70px;
+    padding: 50px;
     background-color: #fff;
 }
 .section4Con{
@@ -359,21 +362,22 @@
     color: rgb(85, 85, 85);
 }
 .section4Head{
+    margin-top: 20px;
     font-weight: 600;
     font-size: 30px;
 }
 .section4Para{
     font-size: 16px;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
 }
 
 @media only screen and (max-width:767px){
     .section4{
-        padding: 40px;
+        padding: 20px;
     }
     .section4Save{
         max-width: 100% !important;
-        margin: 10px 0;
+        margin: 10px auto;
     }
     .section4Anchor, .section4Anchor:hover{
         padding: 5% 0 5% 0%;
@@ -401,7 +405,7 @@
 
 /* style for section5 Div */
 .section5{
-    padding: 50px;
+    padding: 0 50px;
     background-color: #fff;
 }
 .section5Background{
@@ -446,19 +450,19 @@
     width: 120px;
     height: auto;
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:767px){
     .section5{
         padding: 0;
     }
     .section5Background{
-        width: 100%;
-        min-width: 300px;
-    }
-}
-@media only screen and (max-width:700px){
-    .section5Background{
         background-size: cover;
         background-position: center;
+    }  
+}
+@media only screen and (max-width:500px){
+    .section5Background{
+        width: 100%;
+        min-width: 300px;
     }
 }
 /* end of section5 Div */
@@ -466,7 +470,7 @@
 
 /* section6 Three Flex Display Images */
 .section6{
-    padding: 0 50px;
+    padding: 50px;
     justify-content: space-between;
 }
 .section6Item{
@@ -481,6 +485,9 @@
     width: 100%;
 }
 @media only screen and (max-width:767px){
+    .section6{
+        padding: 20px;
+    }
     .section6Item{
         max-width: 100% !important;
         margin-bottom: 20px;
@@ -565,6 +572,9 @@
     }
 }
 @media only screen and (max-width:767px){
+    .section7{
+        padding: 20px 20px 0 20px;
+    }
     .section7Item{
         max-width: 100% !important;
         margin-bottom: 20px;
@@ -599,7 +609,7 @@
     text-align: end;
     background-color: transparent;
 }
-span{
+button span{
     background-color: #fff;
     color: #000;
     font-size: 700;
@@ -678,6 +688,9 @@ span{
 }
 
 @media only screen and (max-width:767px){
+    .section8LinkCon{
+        padding: 20px;
+    }
     .section8CopyRightItem1, .section8CopyRightItem2{
         text-align: center;
     }
