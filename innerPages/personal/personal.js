@@ -52,3 +52,25 @@ function Close5(){
     document.getElementById("listHide5").style.zIndex = 1;
     document.getElementById("listShow5").style.zIndex = 2;
 }
+
+function Open(){
+    document.getElementById("Nav2Item1").style.display = "block";
+    document.getElementById("Nav2ToggleIconOpen").style.display = "none";
+    document.getElementById("Nav2ToggleIconClose").style.display = "block";
+}
+function Close(){
+    document.getElementById("Nav2Item1").style.display = "none";
+    document.getElementById("Nav2ToggleIconOpen").style.display = "block";
+    document.getElementById("Nav2ToggleIconClose").style.display = "";
+}
+
+function Open22(){
+    document.getElementById("nav2Btn").style.display = "block";
+    document.getElementById("Nav2ToggleIconOpen2").style.display = "none";
+    document.getElementById("Nav2ToggleIconClose2").style.display = "block";
+}
+function Close22(){
+    document.getElementById("nav2Btn").style.display = "none";
+    document.getElementById("Nav2ToggleIconOpen2").style.display = "block";
+    document.getElementById("Nav2ToggleIconClose2").style.display = "";
+}

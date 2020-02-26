@@ -111,77 +111,131 @@
 .nav2{
     padding: 0 50px;
     justify-content: space-between;
+    flex-wrap: nowrap !important;
     align-items: center;
-    background-color: #fff;
 }
 .nav2Img{
     width: 150px;
     height: 50%;
     padding: 5px 0;
 }
-.nav2LinkCon{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.Nav2Items{
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .nav2Link, .nav2LinkIcon{
-    padding: 5px;
-    display: inline-block;
-    text-decoration: none;
-    color: #939393;
-    font-weight: 600;
+  text-decoration: none;
+  color: rgb(85, 85, 85);
+  font-weight: 500;
+  display: block;
+  padding: 10px 35px;
 }
 .nav2Link:hover, .nav2LinkIcon:hover{
-    text-decoration: none;
-    color: #E63C28;
+  text-decoration: none;
+  color: #D92028;
 }
 .nav2Button{
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    justify-content: end;
+  display: flex;
+  align-items: center;
 }
-.nav2Btn{
-    position: relative;
-    background-color:#D92028;
-    color: #fff;
-    font-weight: 600;
-    padding: 7px 20px;
-    border-radius: 20px;
-    border: none;
-}
-.nav2Btn:hover .nav2BtnInnerCon{
-    display: block;
+#nav2Btn{
+  position: relative;
+  border-radius: 50px;
+  width: 200px;
+  border: none;
+  background-color: #D92028;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;
 }
 .nav2BtnInnerCon{
-    position: absolute;
-    z-index: 1;
-    display: none;
-    top: 35px;
-    right: 0;
-    padding-top: 20px;
+  display: none;
+  position: absolute;
+  right: 0;
+  padding: 40px 0 0 0;
+}
+.nav2Btn:hover .nav2BtnInnerCon{
+  display: block;
 }
 .nav2BtnInner{
-    list-style-type: none;
-    background-color:#D92028;
+  background-color: #D92028;
+  list-style-type: none;
+  padding: 0;
+}
+.nav2BtnItem{
+  padding: 0;
 }
 .nav2BtnLink{
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    padding: 10px 15px;
-    transition: .3s;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
 }
 .nav2BtnLink:hover{
-    text-decoration: none;
-    color: #fff;
-    background-color: #B21B21;
+  color: #fff;
+  text-decoration: none;
+  background-color: #B41B21;
 }
-@media only screen and (max-width:1000px){
-    .nav2{
-        display: flex !important;
-        padding: 0 5px;
-        justify-items: left !important;
-     }
+/* style for the toggle Button */
+.Nav2ToggleCon{
+  display: none;
+}
+/* end of style for the toggle Button */
+  
+@media only screen and (max-width: 1024px) {
+  .nav2{
+    padding: 0 10px;
+    justify-content: space-between;
+  }
+  .nav2Img{
+    width: 20%;
+    min-width: 60px;
+    height: 20%;
+    padding: 5px 0;
+    order: 1;
+  }
+  .Navbar1{
+    order: 3;
+  }
+  .nav2Button{
+    order: 2;
+  }
+  .Nav2Items, #nav2Btn{
+    border-radius: 0;
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #D92028;
+    color: #fff;
+  }
+  #nav2Btn{
+    color: #000;
+  }
+  .nav2BtnInnerCon{
+    display: block;
+    position: absolute;
+    left: 0;
+    padding: 0;
+  }
+  .nav2Link{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+  }
+  .nav2Link:hover{
+    width: 100%;
+    color: #fff;
+    background-color: #B41B21;
+  }
+  .Nav2ToggleCon{
+    display: block;
+  }
+  #Nav2ToggleIconOpen, #Nav2ToggleIconOpen2{
+    position: absolute;
+    z-index: 2;
+  }
 }
 /* end of style for NAV2-Div */
 

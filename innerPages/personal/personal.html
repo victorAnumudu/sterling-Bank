@@ -65,35 +65,55 @@
 
         <!-- start of Nav 2 -->
         <div class="nav2 row no-gutters">
-            <div class="nav2Image col-lg-2">
+            <div class="nav2Image">
                 <img class="nav2Img" src="images/SterlingLogo.svg" alt="SterlingLogo">
             </div>
-
-            <div class="nav2Anchor col-lg-7">
-               <div class="nav2LinkCon">
-                <a href="" class="nav2Link">Savings</a>
-                <a href="" class="nav2Link">Current</a>
-                <a href="" class="nav2Link">Investment</a>
-                <a href="" class="nav2Link">Loan</a>
-                <a href="" class="nav2Link">Cards</a>
-                <a href="" class="nav2Link">E-Channels</a>
-               </div>
+    
+            <div class="Navbar1 pl-4">
+                <div class="Nav2Toggle">
+                    <span class="Nav2ToggleCon">
+                        <button onclick="Open()" id="Nav2ToggleIconOpen"><i class="Nav2ToggleIcon fas fa-bars"></i>
+                        </button>
+                        <button onclick="Close()" id="Nav2ToggleIconClose"><i class="Nav2ToggleIcon fas fa-times">
+                        </i></button>
+                    </span>
+               
+                    <nav class="Nav2Items row no-gutters" id="Nav2Item1">
+                            <a href="" class="nav2Link">Savings</a>
+                            <a href="" class="nav2Link">Current</a>
+                            <a href="" class="nav2Link">Investment</a>
+                            <a href="" class="nav2Link">Loan</a>
+                            <a href="" class="nav2Link">Cards</a>
+                            <a href="" class="nav2Link">E-Channels</a>
+                    </nav>
+                </div>
             </div>
-
-            <div class="nav2Button col-lg-3">
-                <a class="nav2LinkIcon" href=""><i class="nav2Icon fas fa-search"></i></a>
-                <button class="nav2Btn">&rect; Internet Banking
-                    <div class="nav2BtnInnerCon">
-                        <ul class="nav2BtnInner">
-                            <li class="nav2BtnItem">
-                                <a class="nav2BtnLink" href="../sterlingIB/sterlingIB.html" target="_blank">Sterling Onepay</a>
-                            </li>
-                            <li class="nav2BtnItem">
-                                <a class="nav2BtnLink" href="../sterlingIBS/sterlingIBS.html" target="_blank">Sterling IBS (Old)</a>
-                            </li>
-                        </ul>
-                    </div>
-                </button>
+    
+            <div class="nav2Button">
+                <nav class="Nav2Search" id="Nav2Item2">
+                    <a class="nav2LinkIcon" href=""><i class="nav2Icon fas fa-search"></i></a>
+                </nav>
+                <div class="Nav2Toggle">
+                    <span class="Nav2ToggleCon">
+                        <button onclick="Open22()" id="Nav2ToggleIconOpen2"><i class="Nav2ToggleIcon fas fa-bars"></i>
+                        </button>
+                        <button onclick="Close22()" id="Nav2ToggleIconClose2"><i class="Nav2ToggleIcon fas fa-times">
+                        </i></button>
+                    </span>
+               
+                    <button id="nav2Btn">&rect; Internet Banking
+                        <div class="nav2BtnInnerCon">
+                            <ul class="nav2BtnInner">
+                                <li class="nav2BtnItem">
+                                    <a class="nav2BtnLink" href="../sterlingIB/sterlingIB.html" target="_blank">Sterling Onepay</a>
+                                </li>
+                                <li class="nav2BtnItem">
+                                    <a class="nav2BtnLink" href="../sterlingIBS/sterlingIBS.html" target="_blank">Sterling IBS (Old)</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </button>
+                </div>
             </div>
         </div>
         <!-- end of Nav 2 -->
