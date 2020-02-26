@@ -148,13 +148,14 @@
   font-weight: 600;
   padding: 10px;
 }
-.nav2BtnInnerCon{
+#nav2BtnInnerCon{
   display: none;
   position: absolute;
   right: 0;
+  z-index: 600;
   padding: 40px 0 0 0;
 }
-.nav2Btn:hover .nav2BtnInnerCon{
+#nav2Btn:hover #nav2BtnInnerCon{
   display: block;
 }
 .nav2BtnInner{
@@ -177,7 +178,7 @@
   background-color: #B41B21;
 }
 /* style for the toggle Button */
-.Nav2ToggleCon{
+.Nav2Toggle{
   display: none;
 }
 /* end of style for the toggle Button */
@@ -200,23 +201,24 @@
   .nav2Button{
     order: 2;
   }
-  .Nav2Items, #nav2Btn{
+  #Nav2Item1,  #nav2Btn{
     border-radius: 0;
     display: none;
     position: absolute;
     left: 0;
-    z-index: 999;
+    z-index: 800;
     width: 100%;
     background-color: #D92028;
     color: #fff;
   }
   #nav2Btn{
     color: #000;
+    top: 100px;
+    padding: 0;
   }
-  .nav2BtnInnerCon{
+  #nav2BtnInnerCon{
     display: block;
-    position: absolute;
-    left: 0;
+    width: 100%;
     padding: 0;
   }
   .nav2Link{
@@ -229,12 +231,20 @@
     color: #fff;
     background-color: #B41B21;
   }
-  .Nav2ToggleCon{
+  .Nav2Toggle{
     display: block;
   }
   #Nav2ToggleIconOpen, #Nav2ToggleIconOpen2{
     position: absolute;
     z-index: 2;
+    color: #000;
+    background-color: #fff;
+    border: none;
+  }
+  #Nav2ToggleIconClose, #Nav2ToggleIconClose2{
+      color: #B21B21;
+      background-color: #fff;
+      border: none;
   }
 }
 /* end of style for NAV2-Div */
