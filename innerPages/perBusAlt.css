@@ -282,6 +282,8 @@
   }
   #Nav2ToggleIconClose, #Nav2ToggleIconClose2{
     position: relative;
+    top: 0;
+    left: 0;
     z-index: 1;
     color: #B21B21;
     background-color: #fff;
