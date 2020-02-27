@@ -244,6 +244,7 @@
     border-radius: 0;
     display: none;
     position: absolute;
+    top: 70px;
     left: 0;
     z-index: 800;
     width: 100%;
@@ -251,12 +252,10 @@
     color: #fff;
   }
   #nav2Btn{
-    color: #000;
-    top: 80px;
+    color: #000; 
     padding: 0;
   }
   #nav2BtnInnerCon{
-    /* display: block; */
     width: 100%;
     padding: 0;
   }
@@ -272,18 +271,25 @@
   }
   .Nav2Toggle{
     display: block;
+    position: relative;
+  }
+  .Nav2ToggleIcon{
+      font-size: 15px;
+      width: 15px;
   }
   #Nav2ToggleIconOpen, #Nav2ToggleIconOpen2{
     position: absolute;
     z-index: 2;
+    top: -12px;
+    right: 0;
     color: #000;
     background-color: #fff;
     border: none;
   }
   #Nav2ToggleIconClose, #Nav2ToggleIconClose2{
-    position: relative;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: -12px;
+    right: 0;
     z-index: 1;
     color: #B21B21;
     background-color: #fff;
