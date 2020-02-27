@@ -63,10 +63,17 @@
     padding: 0 50px;
     background-color: #DDDDDD;
 }
+.navItem1, .navItem2{
+    list-style-type: none;
+}
+.nav1List, .nav1List2{
+    display: block;
+}
 .nav1LinkLeftActive{
     background-color: #fff; 
 }
 .nav1LinkLeft, .nav1LinkRight, .nav1LinkLeftActive{
+    display: block;
     padding: 8px 20px;
     text-decoration: none;
     transition: .8s;
@@ -85,18 +92,50 @@
     background-color: #fff;
     color: #E63C28;
 }
-
+.nav1List2Inner{
+    position: relative;
+}
+.nav1InnerCon{
+    width: 200%;
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 600;
+    background-color: rgb(230, 230, 230);
+}
+.nav1List2Inner:hover .nav1InnerCon{
+    display: block;
+}
+.nav1InnerLink{
+    text-decoration: none;
+    padding: 10px 0 10px 20px;
+    display: block;
+    color: #929292;
+    text-transform: uppercase;
+    font-size: .6em;
+    font-weight: 800;
+}
+.nav1InnerLink:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #B21B21;
+}
 @media only screen and (max-width:1000px){
     .nav1{
        display: block !important;
        padding: 0;
     }
-    .nav1LinkLeftActive, .nav1LinkLeft{
+    .navItem1{
+        width: 100%;
+    }
+    .nav1List{
         width: 33.33%;
+        flex-basis: 1;
+    }
+    .nav1LinkLeftActive, .nav1LinkLeft{
         font-size: 75%;
         text-align: center;
         padding: 8px 0px;
-        flex-basis: 1;
     }
     .nav1LinkLeftActive, .nav1LinkLeftActive:hover{
         color: #E63C28;
@@ -242,9 +281,11 @@
     border: none;
   }
   #Nav2ToggleIconClose, #Nav2ToggleIconClose2{
-      color: #B21B21;
-      background-color: #fff;
-      border: none;
+    position: relative;
+    z-index: 1;
+    color: #B21B21;
+    background-color: #fff;
+    border: none;
   }
 }
 /* end of style for NAV2-Div */
@@ -273,7 +314,7 @@
     text-decoration: none;
     color: #fff;
     background-color: gray;
-    background-image: url(../personal/images/section3MainSlide/pay-on-the-go.jpg);
+    background-image: url(personal/images/section3MainSlide/pay-on-the-go.jpg);
     background-size: 100% 100%;
     animation-name: Imgslide;
     animation-duration: 7s;
@@ -282,12 +323,12 @@
     height: inherit;
 }
 @keyframes Imgslide{
-    0%{background-image: url(../personal/images/section3MainSlide/website-sliders8.jpg);}
-    33.33%{background-image: url(../personal/images/section3MainSlide/website-sliders8.jpg);}
-    34%{background-image: url(../personal/images/section3MainSlide/pay-on-the-go.jpg);}
-    66.66%{background-image: url(../personal/images/section3MainSlide/pay-on-the-go.jpg);}
-    67%{background-image: url(../personal/images/section3MainSlide/enjoy-the-simple-life.jpg);}
-    100%{background-image: url(../personal/images/section3MainSlide/enjoy-the-simple-life.jpg);}
+    0%{background-image: url(personal/images/section3MainSlide/website-sliders8.jpg);}
+    33.33%{background-image: url(personal/images/section3MainSlide/website-sliders8.jpg);}
+    34%{background-image: url(personal/images/section3MainSlide/pay-on-the-go.jpg);}
+    66.66%{background-image: url(personal/images/section3MainSlide/pay-on-the-go.jpg);}
+    67%{background-image: url(personal/images/section3MainSlide/enjoy-the-simple-life.jpg);}
+    100%{background-image: url(personal/images/section3MainSlide/enjoy-the-simple-life.jpg);}
 }
 
 @keyframes Mainslide{
@@ -370,13 +411,13 @@
     border-radius: 5px 5px 0 0;
 }
 .section4Header1{
-    background-image: url(../personal/images/section4/1.jpg);
+    background-image: url(personal/images/section4/1.jpg);
 }
 .section4Header2{
-    background-image: url(../personal/images/section4/2.jpg);
+    background-image: url(personal/images/section4/2.jpg);
 }
 .section4Header3{
-    background-image: url(../personal/images/section4/3.jpg);
+    background-image: url(personal/images/section4/3.jpg);
 }
 .section4Overlay{
     border-radius: 5px 5px 0 0;
@@ -473,7 +514,7 @@
     background-color: #fff;
 }
 .section5Background{
-    background-image: url(../personal/images/section5/kiki-banner.jpg);
+    background-image: url(personal/images/section5/kiki-banner.jpg);
     background-size: 100% 100%;
     position: relative;
     padding: 0 5%;
@@ -593,13 +634,13 @@
     background-size: 100% 100%;
 }
 .section7Img1{
-    background-image: url(../personal/images/section7/1.jpg);
+    background-image: url(personal/images/section7/1.jpg);
 }
 .section7Img2{
-    background-image: url(../personal/images/section7/2.jpg);
+    background-image: url(personal/images/section7/2.jpg);
 }
 .section7Img3{
-    background-image: url(../personal/images/section7/3.jpg);
+    background-image: url(personal/images/section7/3.jpg);
 }
 .section7Description{
     padding: 20px 10px;
