@@ -1,3 +1,15 @@
+
+// Search Button box
+function OpenSearch(){
+    document.getElementById("searchCon").style.display = "block";
+}
+
+function CloseSearch(){
+    document.getElementById("searchCon").style.display = "none";
+}
+// End of Search Button Box
+
+
 function Open1(){
     document.getElementById("section8List1").style.display = "block";
     document.getElementById("listHide1").style.zIndex = 2;
@@ -55,22 +67,22 @@ function Close5(){
 
 function Open(){
     document.getElementById("Nav2Item1").style.display = "block";
-    document.getElementById("Nav2ToggleIconOpen").style.zIndex = "1";
-    document.getElementById("Nav2ToggleIconClose").style.zIndex = "2";
+    document.getElementById("Nav2ToggleIconOpen").style.zIndex = 1;
+    document.getElementById("Nav2ToggleIconClose").style.zIndex = 2;
 }
 function Close(){
     document.getElementById("Nav2Item1").style.display = "none";
-    document.getElementById("Nav2ToggleIconOpen").style.zIndex = "2";
-    document.getElementById("Nav2ToggleIconClose").style.zIndex = "1";
+    document.getElementById("Nav2ToggleIconOpen").style.zIndex = 2;
+    document.getElementById("Nav2ToggleIconClose").style.zIndex = 1;
 }
 
 function Open22(){
     document.getElementById("nav2Btn").style.display = "block";
-    document.getElementById("Nav2ToggleIconOpen2").style.zIndex = "1";
-    document.getElementById("Nav2ToggleIconClose2").style.zIndex = "2";
+    document.getElementById("Nav2ToggleIconOpen2").style.zIndex = 1;
+    document.getElementById("Nav2ToggleIconClose2").style.zIndex = 2;
 }
 function Close22(){
     document.getElementById("nav2Btn").style.display = "none";
-    document.getElementById("Nav2ToggleIconOpen2").style.zIndex = "2";
-    document.getElementById("Nav2ToggleIconClose2").style.zIndex = "1";
+    document.getElementById("Nav2ToggleIconOpen2").style.zIndex = 2;
+    document.getElementById("Nav2ToggleIconClose2").style.zIndex = 1;
 }

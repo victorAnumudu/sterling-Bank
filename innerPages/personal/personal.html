@@ -136,7 +136,13 @@
     
             <div class="nav2Button">
                 <nav class="Nav2Search" id="Nav2Item2">
-                    <a class="nav2LinkIcon" href=""><i class="nav2Icon fas fa-search"></i></a>
+                    <button onclick="OpenSearch()" class="nav2LinkIcon" href=""><i class="nav2Icon fas fa-search"></i></button>
+                    <!-- searchButton Div -->
+                        <div id="searchCon">
+                            <button onclick="CloseSearch()" id="searchClose">x</button>
+                            <input title="search" id="searchInput" type="text" placeholder="How can we help?" autofocus>
+                        </div>
+                    <!-- end of searchButton Div -->
                 </nav>
                 <div class="Nav2Toggle">
                     <span class="Nav2ToggleCon">
