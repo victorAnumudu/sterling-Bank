@@ -159,8 +159,8 @@
   }
   #searchClose{
     position: absolute;
-    top: 2vh;
-    right: 2vw;
+    top: 1vh;
+    right: 1vw;
     color: rgb(36, 36, 36);
     padding: 0 5px;
     font-size: 25px;
