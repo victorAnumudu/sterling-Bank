@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    position: relative !important;
+}
+/* POP UP DISPLAY */
+#popUp{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+    width: 65%;
+    height: 90%;
+}
+.closePopUp{
+    color: #AD161F;
+    display: block;
+    float: right;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: 600;
+}
+.imagePopUp{
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 90%;
+}
+/* END OF POP UP DISPLAY */
+
+
+/* left section Slide */
+.slide{
+    position: relative;
+    background-image: url(../images/sterlingIB/slide1.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    animation: slide;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes slide{
+    0%{background-image: url(../images/sterlingIB/slide1.png);}
+    11.11%{background-image: url(../images/sterlingIB/slide2.png);}
+    22.22%{background-image: url(../images/sterlingIB/slide3.png);}
+    33.33%{background-image: url(../images/sterlingIB/slide4.png);}
+    44.44%{background-image: url(../images/sterlingIB/slide5.png);}
+    55.55%{background-image: url(../images/sterlingIB/slide6.png);}
+    66.66%{background-image: url(../images/sterlingIB/slide7.jpg);}
+    77.77%{background-image: url(../images/sterlingIB/slide8.jpg);}
+    88.88%{background-image: url(../images/sterlingIB/slide9.jpg);}
+    100%{background-image: url(../images/sterlingIB/slide1.png);}
+}
+.slideHeader{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+hr{
+    background-color: #fff;
+    box-shadow: 0 0 2px black;
+    width: 80%;
+}
+/* end of left section Slide */
+
+/* right section loginDiv */
+.loginDiv{
+    background-image: url(../images/sterlingIB/loginbg.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* go back button */
+.back, .back:hover{
+    position: absolute;
+    top: 5%;
+    left: 20px;
+    color: #AD161F;
+    text-decoration: none;
+    font-weight: 600;
+}
+.backIcon{
+    background-color: #fff;
+    box-shadow: 0 0 3px black;
+}
+/* end of go back button */
+
+.loginDivWrapper{
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+}
+.logo{
+    width: 100px;
+    height: auto;
+}
+.loginCon{
+    width: 80%;
+    margin: 20px auto 0 auto;
+    padding: 30px 0;
+}
+.TitleCon{
+    padding: 0 40px;
+}
+.loginTitle{
+    font-size: 150%;
+}
+.loginTitle2{
+    font-weight: 300;
+}
+form{
+    width: 100%;
+}
+
+/* signUp Div Style */
+.signUpDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.account{
+    width: 200px;
+    padding: 30px 20px;
+    color: #AD161F;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgb(226, 226, 226);
+    margin: auto;
+    position: relative;
+    top: 0;
+}
+.account:hover{
+    color: #AD161F;
+    text-decoration: none;
+    top: -10px;
+    transition: 1s;
+}
+.accountIcon{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+/* end of signUp Div Style */
+
+/* have account page style */
+.quickTip{
+    font-size: .9em;
+}
+.quickTipRed{
+    color: #AD161F;
+}
+/* end of have account page style */
+
+input[type="text"], input[type="password"], input[type="date"]{
+    display: block;
+    width: 100%;
+    height: 60px;
+    border: 2px solid rgb(218, 217, 217);
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+input[type="text"]:focus, input[type="password"]:focus{
+    border: 2px solid rgb(20, 212, 238);
+    transition: 1s;
+}
+
+input[type="submit"]{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: rgb(209, 29, 41);
+}
+input[type="submit"]:hover{
+    background-color: #AD161F;
+}
+.loginForget, .loginReg{
+    font-weight: 300;
+}
+.loginAnchor, .loginAnchor:hover{
+    text-decoration: none;
+    color: #B93326;
+    font-weight: 600;
+}
+/* end of right section loginDiv */
+
+@media only screen and (max-width:767px){
+    .slide{
+        display: none;
+    }
+    .loginDiv{
+        height: 100vh;
+    }
+}
+@media only screen and (max-width:480px){
+    .loginCon{
+        width: 90%;
+        margin: 20px auto 0 auto;
+        padding: 30px;
+        background-color: #fff;
+    }
+}
+@media only screen and (max-width:600px){
+    #popUp{
+        width: 80%;
+        min-width: 300px;
+        height: 40%;
+        min-height: 200px;
+        overflow-y: scroll;
+    }
+    .imagePopUp{
+        width: 100%;
+        height: 80%;
+    }
+}
