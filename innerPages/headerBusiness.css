@@ -341,8 +341,8 @@
     z-index: 2;
     top: -12px;
     right: 0;
-    color: #000;
-    background-color: #fff;
+    color: #fff;
+    background-color: #000;
     border: none;
   }
   #Nav2ToggleIconClose, #Nav2ToggleIconClose2{
@@ -351,7 +351,7 @@
     right: 0;
     z-index: 1;
     color: #B21B21;
-    background-color: #fff;
+    background-color: #000;
     border: none;
   }
 }
