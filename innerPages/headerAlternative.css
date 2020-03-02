@@ -253,6 +253,7 @@
   padding: 10px;
 }
 #nav2BtnInnerCon{
+  width: 300px;
   display: none;
   position: absolute;
   right: 0;
@@ -394,7 +395,7 @@
     animation-duration: 7s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    height: 50vh;
+    height: 500px;
     position: relative;
 }
 @keyframes Imgslide{
@@ -416,7 +417,7 @@
 }
 
 .section3Description{
-    padding: 7% 0;
+    padding: 4% 0 0 0;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -447,8 +448,12 @@
 }
 
 @media only screen and (max-width:576px){
+    .section3SlideAnchor1, .section3SlideAnchor1:hover{
+        height: 45vh;
+    }
     .section3Description{
-        padding: 50px 20px;
+        padding: 10px;
+        width: 100%;
     }
     .section3AnchorLinkHeader{
         font-size: 30px;
